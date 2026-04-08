@@ -19,7 +19,7 @@ Challenge: Contains NULL values, spare spaces. Stored in inconsistent date forma
 ## Process
 ### 1. Data Cleaning & Transformation (SQL)
 
-1. **Date Standardization**: Handled inconsistent date formats (e.g., DD.MM.YYYY, D/M/YY, DD-MM-YYYY) using:
+1. **Date Standardization**: Handled inconsistent date formats (e.g., DD.MM.YYYY, D/M/YY, MM-DD-YY) using:
    - TRIM to remove spare spaces;
    - REPLACE to unify date separators;
    - SPLIT_PART to separate the date from the timestamp;
