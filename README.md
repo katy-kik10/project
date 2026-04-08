@@ -1,10 +1,10 @@
 # user-retention-cohort-analysis
 
 ## Project Objective
-The goal of this project is to analyze user loyalty and behavior by calculating Retention Rate through Cohort Analysis. The study focuses on comparing the retention patterns between Promo Users (acquired via marketing campaigns) and Organic Users to evaluate acquisition quality and product stickiness.
+The goal of this project is to analyze user loyalty and behavior by calculating Retention Rate through Cohort Analysis. The study focuses on comparing the retention patterns between Promo Users and Organic Users to evaluate acquisition quality and product stickiness.
 
 ## Dataset Used
-The analysis is based on two relational tables (schema project):
+The analysis is based on two relational tables:
 
 cohort_users_raw: contains user profiles, signup sources, and registration timestamps.  
 cohort_events_raw: logs user activities post-registration.  
@@ -45,15 +45,15 @@ Challenge: Contains NULL values, spare spaces. Stored in inconsistent date forma
 
 4. **Conditional Formatting**: Applied a color gradient to the retention matrix to visually identify "[churn points](https://docs.google.com/spreadsheets/d/15GVAmItw9gXh0ffUzEpwybTalQo5MiTZphTUiVbBJAY/edit?gid=1679518782#gid=1679518782)."
 
-## Insights
-**Initial Drop-off**: Most cohorts experience the steepest decline in Month 1, which is typical for digital products, but the rate of stabilization varies by source.
+## Project insights
+**Organic Loyalty**: Organic users are the gold standard, maintaining a Month 1 retention of >73% and stabilizing at a solid 56% by Month 5.
 
-**Segment Performance**: Organic users generally demonstrate a higher "long-tail" retention compared to Promo users, who often churn quickly after the initial incentive period.
+**Promo Churn**: Promo-driven cohorts experience a steep decline in activity, plummeting from 50% to 9% after the promotional offers ends.
 
-**Seasonality**: Cohorts joined in early 2025 (e.g., January) showed different engagement levels compared to later cohorts, suggesting changes in acquisition quality or product updates.
+**Business Impact**: Identified that organic users are 6x more likely to stay long-term, suggesting a strategic shift from discount-heavy acquisition to organic brand growth.
 
-## Conclusion
-The analysis reveals that while Promo campaigns are effective for rapid user acquisition, Organic users provide higher lifetime value (LTV) due to superior retention. 
+## Final conclusion
+The analysis reveals that while Promo campaigns are effective for rapid user acquisition, Organic users provide higher lifetime value due to superior retention. 
 
 To optimize marketing spend, it is recommended to refine the targeting of promo campaigns to attract users whose behavior more closely mirrors the organic segment. 
 
