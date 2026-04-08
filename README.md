@@ -1,4 +1,4 @@
-# User Retention Analysis (Cohort Analysis) using SQL & Google Sheets
+# user-retention-cohort-analysis
 
 ## Project Objective
 The goal of this project is to analyze user loyalty and behavior by calculating Retention Rate through Cohort Analysis. The study focuses on comparing the retention patterns between Promo Users (acquired via marketing campaigns) and Organic Users to evaluate acquisition quality and product stickiness.
