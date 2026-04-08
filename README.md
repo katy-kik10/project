@@ -9,7 +9,7 @@ The analysis is based on two relational tables:
 cohort_users_raw: contains user profiles, signup sources, and registration timestamps.  
 cohort_events_raw: logs user activities post-registration.  
 
-Challenge: Contains NULL values, spare spaces. Stored in inconsistent date formats with mixed delimiters and varying year lengths. 
+Challenge: Contains NULL values. Dates was stored in inconsistent date formats with mixed delimiters, spare spaces and varying year lengths. 
 
 ## Key Questions
 * How does the Retention Rate change over the first 6 months of the user lifecycle?
@@ -23,10 +23,12 @@ Challenge: Contains NULL values, spare spaces. Stored in inconsistent date forma
    - TRIM to remove spare spaces;
    - REPLACE to unify date separators;
    - SPLIT_PART to separate the date from the timestamp;
-   - LENGHT to define short date formats;
+   - LENGTH to define short date formats;
    - TO_DATE to convert cleaned strings into a uniform date format.  
 
-2. **Data Filtering**: Excluded test_event types and records with NULL timestamps or user IDs to ensure data integrity. 
+2. **Data Filtering**:
+   - Excluded test_event types and records with NULL timestamps or user IDs to ensure data integrity.
+   - Restricted dataset to Jan–Jun 2025 to maintain a controlled environment for cohort comparison.
 
 4. **Cohort Logic**:
    - Identified the Cohort Month for each user based on their registration date.
