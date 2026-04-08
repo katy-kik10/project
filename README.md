@@ -43,7 +43,7 @@ Challenge: Contains NULL values, spare spaces. Stored in inconsistent date forma
 
 3. **Interactive Dashboard**: Implemented Slicers for promo_signup_flag to allow dynamic switching between Organic and Promo segments.
 
-4. **Conditional Formatting**: Applied a color gradient to the retention matrix to visually identify "churn points."
+4. **Conditional Formatting**: Applied a color gradient to the retention matrix to visually identify "[churn points](https://docs.google.com/spreadsheets/d/15GVAmItw9gXh0ffUzEpwybTalQo5MiTZphTUiVbBJAY/edit?gid=1679518782#gid=1679518782)."
 
 ## Insights
 **Initial Drop-off**: Most cohorts experience the steepest decline in Month 1, which is typical for digital products, but the rate of stabilization varies by source.
